@@ -1,0 +1,57 @@
+body {
+  color-scheme: dark;
+  background-color: #222222;
+  margin: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #c2c2c2;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+#webcamVideo {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  border: 3px solid #7d0019;
+}
+
+#remoteVideo {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  border: 3px solid #7d0019;
+}
+
+.title h3 {
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #7d0019;
+}
+
+.videos {
+  padding-bottom: 20px;
+}
+
+#copyright {
+  text-align: center;
+  margin-top: 20px;
+}

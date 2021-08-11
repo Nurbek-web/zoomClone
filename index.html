@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Demo</title>
+  </head>
+  <body>
+    <h2>1. Start your Webcam</h2>
+    <div class="videos row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="title">
+          <h3>Local Stream</h3>
+        </div>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="title">
+          <h3>Remote Stream</h3>
+        </div>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="webcamButton">
+      Start webcam
+    </button>
+    <h2>2. Create a new Call</h2>
+    <button type="button" class="btn btn-success" id="callButton" disabled>
+      Create Call (offer)
+    </button>
+
+    <h2>3. Join a Call</h2>
+    <p>Answer the call from a different browser window or device</p>
+
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        id="callInput"
+        class="form-control"
+        placeholder="Recipient's username"
+        aria-label="Recipient's username"
+        aria-describedby="basic-addon2"
+      />
+      <div class="input-group-append">
+        <button
+          type="button"
+          class="btn btn-warning"
+          id="answerButton"
+          disabled
+        >
+          Answer
+        </button>
+      </div>
+    </div>
+
+    <h2>4. Hangup</h2>
+
+    <button type="button" class="btn btn-danger" id="hangupButton" disabled>
+      Hangup
+    </button>
+
+    <h6 id="copyright">© 2021 Nurbek Taizhanov</h6>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
